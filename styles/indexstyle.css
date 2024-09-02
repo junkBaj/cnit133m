@@ -1,0 +1,17 @@
+h1 {
+    color: navy;
+    margin-left: 20px;
+}
+
+#opphoto {
+    max-width: 15%;
+}
+
+#introtext {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.maintext {
+    max-width: 66%;
+}
