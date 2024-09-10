@@ -5,11 +5,11 @@ h1 {
 
 #opphoto {
     max-width: 15%;
+    float:left;
 }
 
 #introtext {
-    display: inline-block;
-    vertical-align: top;
+    clear:left;
 }
 
 .maintext {
