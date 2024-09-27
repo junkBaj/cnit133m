@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+
         <meta charset="utf-8">
         <meta name="description" content="A simple website designed for mobile">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,21 +11,22 @@
         <script>
             $(document).ready(function() {
                $("button").on("click", function(){
-                    $("h1").animate({
+                    $("h1").animate({ // adds 1 relative em to the h1 font in 1000 ms
                         fontSize: "+=1rem"
                     }, 1000);
-                    $("h1").css("color", "red");
-                    $("h1").animate({
+                    $("h1").css("color", "red"); // changes to color of h1 to red
+                    $("h1").animate({ // subtracts 1 relative em to h1 font in 1000 ms
                         fontSize: "-=1rem"
                     }, 1000);
-                    setTimeout(function() {
+                    setTimeout(function() { // waits 2000 ms and changes the color to navy
                         $("h1").css("color", "navy")}, 2000);
-                    $("#opphoto").animate({
+                    $("#opphoto").animate({ // makes the opphoto image border visible
                         borderWidth: "2"
                     });
                });
             });
         </script>
+
     </head>
     <body>
 
@@ -46,10 +48,11 @@
         <h3>Resources</h3>
         <ul>
             <li><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer">W3 Schools - HTML Tutorial</a>
-            <br><div class="bodytext">This website is a great tool to begin learning about HTML. It has thousands of tutorials for the basic functions.</div><br> </li>
+            <br><div class="bodytext">This website is a great tool to begin learning about HTML. It has thousands of tutorials for the basic functions.</div><br></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">Mozilla's JavaScript Tutorial</a>
                 <br><div class="bodytext">Mozilla is a champion of privacy on the internet and is one of the more open browsers (they aren't about the advertisement dollars). This is their JavaScript tutorial which also has links
              to other guides and documentation for the language.</div> </li>
         </ul>
+
     </body>
 </html> 
