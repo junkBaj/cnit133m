@@ -4,12 +4,31 @@
         <meta charset="utf-8">
         <meta name="description" content="A simple website designed for mobile">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <title>CNIT133M -- Andrew Hutcheson</title>
         <link rel="stylesheet" href="styles/indexstyle.css">
+        <script>
+            $(document).ready(function() {
+               $("button").click(function(){
+                    $("h1").animate({
+                        fontSize: "300%",
+                        color: "red"
+                    }, 1000);
+                    $("h1").animate({
+                        fontSize: "36px",
+                        color: "navy"
+                    }, 1000);
+                    $("#opphoto").animate({
+                        borderWidth: "2"
+                    });
+               });
+            });
+        </script>
     </head>
     <body>
 
         <h1>CNIT133M - Mobile Web with HTML</h1>
+        <button>PRESS HERE</button>
         <img src="images/robo_v2.75-01.png" id="opphoto" alt="Junkyard Robot designed by Andrew Hutcheson">
         <p class="bodytext">My name is Andrew and I live in San Francisco. I bartend when I am not studying at CCSF.</p>
         <p id="introtext" class="bodytext">I am taking this class to learn how the web is viewed on mobile devices. I hope to bridge a gap 
@@ -31,6 +50,5 @@
                 <br><div class="bodytext">Mozilla is a champion of privacy on the internet and is one of the more open browsers (they aren't about the advertisement dollars). This is their JavaScript tutorial which also has links
              to other guides and documentation for the language.</div> </li>
         </ul>
-
     </body>
 </html> 

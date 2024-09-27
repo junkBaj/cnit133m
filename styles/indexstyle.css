@@ -1,9 +1,12 @@
 h1 {
+    font-size: 36px;
+    font-weight: bold;
     color: navy;
     margin-left: 20px;
 }
 
 #opphoto {
+    border: 0 solid black;
     max-width: 15%;
     float:left;
 }
