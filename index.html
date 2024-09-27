@@ -9,15 +9,16 @@
         <link rel="stylesheet" href="styles/indexstyle.css">
         <script>
             $(document).ready(function() {
-               $("button").click(function(){
+               $("button").on("click", function(){
                     $("h1").animate({
-                        fontSize: "300%",
-                        color: "red"
+                        fontSize: "+=1rem"
                     }, 1000);
+                    $("h1").css("color", "red");
                     $("h1").animate({
-                        fontSize: "36px",
-                        color: "navy"
+                        fontSize: "-=1rem"
                     }, 1000);
+                    setTimeout(function() {
+                        $("h1").css("color", "navy")}, 2000);
                     $("#opphoto").animate({
                         borderWidth: "2"
                     });
